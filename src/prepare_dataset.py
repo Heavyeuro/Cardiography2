@@ -26,15 +26,16 @@ def prepare_ecg(ECGS_filename):
                 df = ca.read_csv(f)
                 df_inlined = inline_single_ecg(df)
             else:
-                df = df.append(ca.read_csv(f))
-                df_inlined = df_inlined.append(inline_single_ecg(ca.read_csv(f)))
+                current_line = ca.read_csv(f)
+                df = pd.concat([df, current_line])
+                df_inlined = pd.concat([df_inlined, inline_single_ecg(current_line)])
 
     df.to_csv('../DataSource/' + ECGS_filename)
     df.to_csv('../DataSource/' + 'inlined_'+ECGS_filename)
 
 
 def inline_single_ecg(df: DataFrame):
-    patient_id = df.iloc[[0], [0]]
+    patient_id = df.iloc[0, 0]
     coloumns_to_drop = ['patient_id', 'ecg_id', 'lead']
     for col in coloumns_to_drop:
         df.drop(col, axis=1, inplace=True)
