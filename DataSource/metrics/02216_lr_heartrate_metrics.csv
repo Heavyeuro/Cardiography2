@@ -1,0 +1,13 @@
+patient_id,ecg_id,lead,bpm,ibi,sdnn,sdsd,rmssd,pnn20,pnn50,hr_mad,sd1,sd2,s,sd1/sd2,breathingrate
+1809.0,2216,0,657.5342465753424,91.25,101.41961102272084,82.46211251235322,124.54361128179603,0.6666666666666666,0.5555555555555556,25.0,87.16381625535638,63.92511050507788,17504.817877226527,1.3635301615698034,0.684931506849315
+1809.0,2216,1,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,2,1103.448275862069,54.375,59.68340954570206,65.28191476252614,83.59957469322968,0.5555555555555556,0.3333333333333333,10.0,57.19794522770555,55.62218227015034,9994.897026530132,1.0283297578994999,1.1494252873563218
+1809.0,2216,3,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,4,500.0,120.0,0.0,--,nan,nan,nan,0.0,nan,nan,nan,nan,nan
+1809.0,2216,5,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,6,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,7,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,8,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,9,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,10,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+1809.0,2216,11,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
