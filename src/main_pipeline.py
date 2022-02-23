@@ -18,8 +18,9 @@ if __name__ == '__main__':
     # da.describe_dataframe_core(dataframe)
 
     # Joining ECGS_data and patients info
-    ECGS_data = ca.read_csv('../DataSource/' + ECGS_filename)
-    X = dataframe.join(ECGS_data)
+    ECGS_data = ca.read_csv('../DataSource/' + 'inlined_' + ECGS_filename)
+    X = dataframe.set_index('patient_id').join(ECGS_data.set_index('patient_id'))
+    # X = dataframe.join(ECGS_data)
     path = '../DataSource/'
     X.to_csv(path + "joined_data.csv")
 

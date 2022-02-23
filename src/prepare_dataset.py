@@ -24,10 +24,13 @@ def prepare_ecg(ECGS_filename):
         if os.path.isfile(f):
             if 'df' not in locals():
                 df = ca.read_csv(f)
+                df_inlined = inline_single_ecg(df)
             else:
                 df = df.append(ca.read_csv(f))
+                df_inlined = df_inlined.append(inline_single_ecg(ca.read_csv(f)))
 
     df.to_csv('../DataSource/' + ECGS_filename)
+    df.to_csv('../DataSource/' + 'inlined_'+ECGS_filename)
 
 
 def inline_single_ecg(df: DataFrame):
@@ -40,6 +43,7 @@ def inline_single_ecg(df: DataFrame):
     df_out.index = df_out.index.map('{0[1]}_{0[0]}'.format)
     df_inlined = df_out.to_frame().T
     df_inlined['patient_id'] = patient_id
+    return df_inlined
 
 
 # Refactoring output data col to True and False
