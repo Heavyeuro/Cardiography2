@@ -1,5 +1,6 @@
 import os
 
+import numpy as np
 from pandas import DataFrame
 from sklearn.impute import SimpleImputer
 import core_action as ca
@@ -31,7 +32,7 @@ def prepare_ecg(ECGS_filename):
                 df_inlined = pd.concat([df_inlined, inline_single_ecg(current_line)])
 
     df.to_csv('../DataSource/' + ECGS_filename)
-    df.to_csv('../DataSource/' + 'inlined_'+ECGS_filename)
+    df_inlined.to_csv('../DataSource/' + 'inlined_'+ECGS_filename)
 
 
 def inline_single_ecg(df: DataFrame):
@@ -66,8 +67,8 @@ def prepare_dataset_core(name_csv: str):
 
 
 # Replacing missing values (imputing) according to certain strategy
-def simple_imputing_data(X_train, X_valid):
-    simple_imputer = SimpleImputer(strategy='mean')
+def simple_imputing_data(X_train, X_valid, strategy:str = 'mean'):
+    simple_imputer = SimpleImputer(missing_values=np.nan, strategy=strategy)
     imputed_X_train = pd.DataFrame(simple_imputer.fit_transform(X_train))
     imputed_X_valid = pd.DataFrame(simple_imputer.transform(X_valid))
     # Imputation removed column names; put them back
