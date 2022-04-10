@@ -6,7 +6,6 @@ from sklearn.impute import SimpleImputer
 import core_action as ca
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from pathlib import Path
 
 
 def detect_vals(obj_to_describe, val, exclude_col=[]):

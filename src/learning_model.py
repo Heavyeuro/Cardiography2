@@ -1,9 +1,8 @@
 from collections import OrderedDict
 from random import uniform
 
-from matplotlib import pyplot as plt, pyplot
+from matplotlib import pyplot
 from pandas import DataFrame
-from xgboost import XGBRegressor
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.metrics import mean_absolute_error, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedStratifiedKFold, cross_val_score
