@@ -3,25 +3,15 @@ from random import uniform
 
 from matplotlib import pyplot
 from pandas import DataFrame
-from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.metrics import mean_absolute_error, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
-from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedStratifiedKFold, cross_val_score
 import core_action as ca
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.datasets import make_moons, make_circles, make_classification
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.gaussian_process.kernels import RBF
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.ensemble import RandomForestClassifier
 
 
 # beside_list - columns to avoid
@@ -37,8 +27,7 @@ def build_and_score_ml_model_core(X_full: DataFrame, beside_list=[]):
     # rfc_(X_train, X_valid, y_train, y_valid)
 
 
-def estimate(X_train, X_valid, y_train, y_valid, randomState=round(uniform(0, 300))):
-    randomState = round(uniform(0, 300))
+def estimate(X_train, X_valid, y_train, y_valid, random_state=round(uniform(0, 300))):
     names = [
         "Nearest Neighbors",
         "RBF SVM",
@@ -50,8 +39,8 @@ def estimate(X_train, X_valid, y_train, y_valid, randomState=round(uniform(0, 30
     classifiers = [
         KNeighborsClassifier(3),
         SVC(gamma=2, C=1),
-        DecisionTreeClassifier(random_state=randomState, min_samples_split=20, max_features='log2', criterion='entropy'),
-        RandomForestClassifier(random_state=randomState, min_samples_split=20, max_features='log2', criterion='entropy'),
+        DecisionTreeClassifier(random_state=random_state, min_samples_split=20, max_features='log2', criterion='entropy'),
+        RandomForestClassifier(random_state=random_state, min_samples_split=20, max_features='log2', criterion='entropy'),
         MLPClassifier(alpha=1, max_iter=1000)
     ]
 
