@@ -92,7 +92,8 @@ def diagnostic_superclass_nurse(df_main: DataFrame, superclass_cols=['diagnostic
     df['percentage over all samples'] = all_count
     df['nurse'] = all_values
 
-    ax = sns.barplot(data=df, x="percentage over all samples", y="diagnostic superclass", hue="nurse", ci=None, orient='h')
+    ax = sns.barplot(data=df, x="percentage over all samples",
+                     y="diagnostic superclass", hue="nurse", ci=None, orient='h')
     for rect in ax.patches:
         ax.text(rect.get_width(), rect.get_y() + rect.get_height() / 2,"%.1f%%"% rect.get_width(), weight='bold')
 
@@ -124,7 +125,7 @@ def diagnostic_superclass_sex(df_main: DataFrame, superclass_cols=['diagnostic_s
 def diagnostic_superclass_device(df_main: DataFrame, superclass_cols=['diagnostic_superclass']):
     df = df_main
     sns.set_style("whitegrid")
-    bar,ax = plt.subplots(figsize=(10, 20))
+    bar, ax = plt.subplots(figsize=(10, 20))
 
     ax.set_title("diagnostic Superclass Distribution of Different Device", fontsize=20)
 
@@ -140,9 +141,10 @@ def diagnostic_superclass_device(df_main: DataFrame, superclass_cols=['diagnosti
     df['percentage over all samples'] = all_count
     df['device'] = all_values
 
-    ax = sns.barplot(data=df, x="percentage over all samples", y="diagnostic superclass", hue="device",ci=None, orient='h')
+    ax = sns.barplot(data=df, x="percentage over all samples",
+                     y="diagnostic superclass", hue="device", ci=None, orient='h')
     for rect in ax.patches:
-        ax.text(rect.get_width(), rect.get_y() + rect.get_height() / 2,"%.2f%%"% rect.get_width(), weight='bold')
+        ax.text(rect.get_width(), rect.get_y() + rect.get_height() / 2, "%.2f%%" % rect.get_width(), weight='bold')
 
 
 def describe_dataset(df: DataFrame):
