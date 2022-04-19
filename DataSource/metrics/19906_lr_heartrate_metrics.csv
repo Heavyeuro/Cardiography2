@@ -1,0 +1,13 @@
+patient_id,ecg_id,lead,bpm,ibi,sdnn,sdsd,rmssd,pnn20,pnn50,hr_mad,sd1,sd2,s,sd1/sd2,breathingrate
+15360.0,19907,0,63.829787234042556,940.0,0.0,--,nan,nan,nan,0.0,nan,nan,nan,nan,nan
+15360.0,19907,1,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,2,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,3,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,4,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,5,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,6,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,7,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,8,837.2093023255813,71.66666666666667,84.34387285919996,110.0,162.78820596099706,0.5,0.5,5.0,84.85281374238569,77.78174593052022,20734.51151369263,1.0909090909090908,2.3255813953488373
+15360.0,19907,9,39.27986906710311,1527.5,104.49282272003182,117.28408057172787,158.53495934125488,0.6666666666666666,0.3333333333333333,25.0,99.38701010583715,66.58328118479388,20789.5309797949,1.4926721593968983,0.1636661211129296
+15360.0,19907,10,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+15360.0,19907,11,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan

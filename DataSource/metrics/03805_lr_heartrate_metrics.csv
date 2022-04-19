@@ -1,0 +1,13 @@
+patient_id,ecg_id,lead,bpm,ibi,sdnn,sdsd,rmssd,pnn20,pnn50,hr_mad,sd1,sd2,s,sd1/sd2,breathingrate
+3693.0,3806,0,193.5483870967742,310.0,50.0,--,nan,nan,nan,50.0,nan,nan,nan,nan,nan
+3693.0,3806,1,166.66666666666666,360.0,0.0,--,nan,nan,nan,0.0,nan,nan,nan,nan,nan
+3693.0,3806,2,57.69230769230769,1040.0,250.0,--,nan,nan,nan,250.0,nan,nan,nan,nan,nan
+3693.0,3806,3,166.66666666666666,360.0,0.0,--,nan,nan,nan,0.0,nan,nan,nan,nan,nan
+3693.0,3806,4,226.41509433962264,265.0,135.0,--,nan,nan,nan,135.0,nan,nan,nan,nan,nan
+3693.0,3806,5,113.74407582938389,527.5,101.08783309577865,0.0,190.0,1.0,1.0,40.0,0.0,0.0,0.0,nan,0.47393364928909953
+3693.0,3806,6,162.16216216216216,370.0,0.0,--,nan,nan,nan,0.0,nan,nan,nan,nan,nan
+3693.0,3806,7,122.44897959183673,490.0,120.0,--,nan,nan,nan,120.0,nan,nan,nan,nan,nan
+3693.0,3806,8,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+3693.0,3806,9,nan,nan,nan,--,nan,nan,nan,nan,nan,nan,nan,nan,nan
+3693.0,3806,10,59.701492537313435,1005.0,265.0,--,nan,nan,nan,265.0,nan,nan,nan,nan,nan
+3693.0,3806,11,80.0,750.0,10.0,--,nan,nan,nan,10.0,nan,nan,nan,nan,nan
